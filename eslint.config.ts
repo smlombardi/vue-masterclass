@@ -22,5 +22,16 @@ export default defineConfigWithVueTs(
 
   ...pluginOxlint.buildFromOxlintConfigFile('.oxlintrc.json'),
 
+  {
+    name: 'app/rules-overrides',
+    rules: {
+      // Change unused variables and imports from error to warning
+      '@typescript-eslint/no-unused-vars': 'warn',
+      'vue/no-unused-vars': 'warn',
+      // If you have unused imports rule, set it to warn as well
+      '@typescript-eslint/no-unused-imports': 'warn',
+    },
+  },
+
   skipFormatting,
 )
