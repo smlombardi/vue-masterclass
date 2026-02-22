@@ -5,8 +5,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { R } from 'vue-router/dist/index-DFCq6eJK.js'
-</script>
+<script setup lang="ts"></script>
 
 <style scoped></style>

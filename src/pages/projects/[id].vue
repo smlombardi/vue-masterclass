@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-const route = useRoute()
+const route = useRoute('/projects/[id]')
 console.log('Route params:', route.params)
 </script>
 
